@@ -1,6 +1,5 @@
 package packageForCalculator;
 
-
 import packageForCalculator.Interface.ConsoleReader;
 import packageForCalculator.Interface.InterfaceReader;
 

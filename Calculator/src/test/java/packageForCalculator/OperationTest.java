@@ -8,6 +8,7 @@ import packageForCalculator.Enum.NameOperations;
 public class OperationTest {
     private Operation operation;
 
+
     @DataProvider
     public Object[][] Data() {
         return new Object[][]{

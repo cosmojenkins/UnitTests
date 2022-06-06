@@ -17,12 +17,4 @@
         <maven.compiler.target>18</maven.compiler.target>
     </properties>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>7.6.0</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
 </project>
