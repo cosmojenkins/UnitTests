@@ -11,16 +11,28 @@ public class OperationTest {
     @DataProvider
     public Object[][] Data() {
         return new Object[][]{
+
                 {70, 60, 10, NameOperations.SUMMATION.valueInsideEnum()},
-                {6, 60, 10, NameOperations.DIVISION.valueInsideEnum()},
-                {600, 60, 10, NameOperations.MULTIPLICATION.valueInsideEnum()},
+                {0, 0, 0, NameOperations.SUMMATION.valueInsideEnum()},
+
                 {50, 60, 10, NameOperations.SUBTRACTION.valueInsideEnum()},
                 {0, 0, 0, NameOperations.SUBTRACTION.valueInsideEnum()},
-                {0, 0, 0, NameOperations.SUMMATION.valueInsideEnum()},
-                {0, 0, 0, NameOperations.MULTIPLICATION.valueInsideEnum()},
-                {2147483647, 2147483647, 100, NameOperations.MULTIPLICATION.valueInsideEnum()},
-                {2147483647, 2147483647, 100, NameOperations.SUMMATION.valueInsideEnum()},
 
+                {0, 0, 0, NameOperations.MULTIPLICATION.valueInsideEnum()},
+                {600, 60, 10, NameOperations.MULTIPLICATION.valueInsideEnum()},
+
+                {6, 60, 10, NameOperations.DIVISION.valueInsideEnum()},
+                {0, 0, 0, NameOperations.DIVISION.valueInsideEnum()},
+                {0, 0, 10, NameOperations.DIVISION.valueInsideEnum()},
+                {1110, 770, 0, NameOperations.DIVISION.valueInsideEnum()},
+
+                {Integer.MAX_VALUE, Integer.MAX_VALUE, 10, NameOperations.MULTIPLICATION.valueInsideEnum()},
+                {Integer.MIN_VALUE, Integer.MIN_VALUE, 10, NameOperations.MULTIPLICATION.valueInsideEnum()},
+                {Integer.MAX_VALUE, Integer.MAX_VALUE, 1, NameOperations.SUMMATION.valueInsideEnum()},
+                {2147483646, Integer.MAX_VALUE, 1, NameOperations.SUBTRACTION.valueInsideEnum()},
+                {Integer.MAX_VALUE, Integer.MAX_VALUE, 10505455, NameOperations.SUMMATION.valueInsideEnum()},
+                {Integer.MIN_VALUE, Integer.MIN_VALUE, 0, NameOperations.SUBTRACTION.valueInsideEnum()},
+                {Integer.MAX_VALUE, 0, Integer.MAX_VALUE, NameOperations.SUMMATION.valueInsideEnum()},
         };
     }
 
